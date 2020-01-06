@@ -1,6 +1,9 @@
 @import (reference) './var.less';
 
 .theme(@property, @imp) {
+  // todo 为啥要搞一个var(--, #ff)的属性?这是变量嘛
+  // 在example示例小程序里面没看到在哪里声明过变量啊
+  // 可是最终的开发者工具里面,却使用的是var这个属性值
   @{property}: e(replace(@imp, '@([^() ]+)', '@{$1}', 'ig'));
   @{property}: e(replace(@imp, '@([^() ]+)', 'var(--$1, @{$1})', 'ig'));
 }

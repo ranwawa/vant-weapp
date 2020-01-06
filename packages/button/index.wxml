@@ -1,9 +1,14 @@
-<wxs src="../wxs/utils.wxs" module="utils" />
+<wxs
+  src="../wxs/utils.wxs"
+  module="utils"
+  xmlns:wx=""
+/>
 
+<!-- todo hover-class属性里面的hover-class有啥作用呢? -->
 <button
-  id="{{ id }}"
   class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline--surround' : '' }}"
-  hover-class="van-button--active hover-class"
+  <!--id="{{ id }}"-->
+  <!--hover-class="van-button&#45;&#45;active hover-class"-->
   lang="{{ lang }}"
   style="{{ style }} {{ customStyle }}"
   open-type="{{ openType }}"
@@ -25,24 +30,24 @@
 >
   <block wx:if="{{ loading }}">
     <van-loading
+      type="{{ loadingType }}"
       custom-class="loading-class"
       size="{{ loadingSize }}"
-      type="{{ loadingType }}"
       color="{{ type === 'default' ? '#c9c9c9' : 'white' }}"
     />
     <view
-      wx:if="{{ loadingText }}"
       class="van-button__loading-text"
+      wx:if="{{ loadingText }}"
     >
       {{ loadingText }}
     </view>
   </block>
   <block wx:else>
     <van-icon
+      class="van-button__icon"
+      name="{{ icon }}"
       wx:if="{{ icon }}"
       size="1.2em"
-      name="{{ icon }}"
-      class="van-button__icon"
       custom-style="line-height: inherit;"
     />
     <view class="van-button__text">
