@@ -11,14 +11,16 @@
   //line-height: @button-line-height;
   //text-align: center;
   //vertical-align: middle;
-  /* todo 这两个属性是什么的? */
-  -webkit-appearance: none;
-  -webkit-text-size-adjust: 100%;
+  /* 这两个属性是什么的? */
+  /* 主要是禁用ios下button的默认样式 */
+  //-webkit-appearance: none;
+  /* 主要是让小屏幕的手机字号看上去大一些 */
+  //-webkit-text-size-adjust: 100%;
 
   //.theme(height, @button-default-height);
   //.theme(font-size, @button-default-font-size);
-  .theme(transition, 'opacity @animation-duration-fast');
-  .theme(border-radius, '@button-border-radius');
+  //.theme(transition, opacity @animation-duration-fast);
+  //.theme(border-radius, @button-border-radius);
 
   //&::before {
   //  position: absolute;
@@ -46,9 +48,11 @@
   //  opacity: 0.15;
   //}
 
-  &--unclickable::after {
-    display: none;
-  }
+  /* 搞这个属性在这儿干嘛呢?本身就只有一个边框样式呀 */
+  /* 很多其他情况会,也会给after加内容 */
+  //&--unclickable::after {
+  //  display: none;
+  //}
 
   //&--default {
   //  .theme(color, '@button-default-color');
@@ -80,25 +84,25 @@
   //  .theme(border, '1px solid @button-warning-border-color');
   //}
 
-  &--plain {
-    .theme(background-color, '@button-plain-background-color');
-
-    &.van-button--primary {
-      .theme(color, '@button-primary-background-color');
-    }
-
-    &.van-button--info {
-      .theme(color, '@button-info-background-color');
-    }
-
-    &.van-button--danger {
-      .theme(color, '@button-danger-background-color');
-    }
-
-    &.van-button--warning {
-      .theme(color, '@button-warning-background-color');
-    }
-  }
+  //&--plain {
+  //  .theme(background-color, @button-plain-background-color);
+  //
+  //  &.van-button--primary {
+  //    .theme(color, '@button-primary-background-color');
+  //  }
+  //
+  //  &.van-button--info {
+  //    .theme(color, '@button-info-background-color');
+  //  }
+  //
+  //  &.van-button--danger {
+  //    .theme(color, '@button-danger-background-color');
+  //  }
+  //
+  //  &.van-button--warning {
+  //    .theme(color, '@button-warning-background-color');
+  //  }
+  //}
 
   //&--large {
   //  width: 100%;
@@ -130,22 +134,22 @@
   //  }
   //}
 
-  &--block {
-    display: flex;
-    width: 100%;
-  }
+  //&--block {
+  //  display: flex;
+  //  width: 100%;
+  //}
 
-  &--round {
-    .theme(border-radius, '@button-round-border-radius');
-  }
+  //&--round {
+  //  .theme(border-radius, @button-round-border-radius);
+  //}
+  //
+  //&--square {
+  //  border-radius: 0;
+  //}
 
-  &--square {
-    border-radius: 0;
-  }
-
-  &--disabled {
-    .theme(opacity, '@button-disabled-opacity');
-  }
+  //&--disabled {
+  //  .theme(opacity, @button-disabled-opacity);
+  //}
 
   &__text {
     display: inline;

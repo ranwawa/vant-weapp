@@ -13,10 +13,10 @@ VantComponent({
 
   props: {
     icon: String,
-    plain: Boolean,
-    block: Boolean,
-    round: Boolean,
-    square: Boolean,
+    // plain: Boolean,
+    // block: Boolean,
+    // round: Boolean,
+    // square: Boolean,
     loading: Boolean,
     hairline: Boolean,
     disabled: Boolean,
@@ -26,14 +26,14 @@ VantComponent({
       type: String,
       value: 'circular'
     },
-    type: {
-      type: String,
-      value: 'default'
-    },
-    size: {
-      type: String,
-      value: 'normal'
-    },
+    // type: {
+    //   type: String,
+    //   value: 'default'
+    // },
+    // size: {
+    //   type: String,
+    //   value: 'normal'
+    // },
     loadingSize: {
       type: String,
       value: '20px'

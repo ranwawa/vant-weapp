@@ -5,6 +5,7 @@
 />
 
 <!-- todo hover-class属性里面的hover-class有啥作用呢? -->
+<!-- todo disable为什么仅仅是通过样式和事件来控制,而非直接改变button的属性值呢?,这应该是个bug -->
 <button
   class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline--surround' : '' }}"
   <!--id="{{ id }}"-->
