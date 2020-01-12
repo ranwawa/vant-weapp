@@ -50,7 +50,7 @@
 
   <demo-block title="自定义颜色" padding>
     <van-button color="#7232dd" class="demo-margin-right">单色按钮</van-button>
-    <van-button color="#7232dd" class="demo-margin-right" plain>单色按钮</van-button>
+    <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" class="demo-margin-right" plain>单色按钮</van-button>
     <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">渐变色按钮</van-button>
   </demo-block>
 

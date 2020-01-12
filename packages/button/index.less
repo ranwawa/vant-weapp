@@ -22,6 +22,9 @@
   //.theme(transition, opacity @animation-duration-fast);
   //.theme(border-radius, @button-border-radius);
 
+  /* 继承边框和圆角的目的是什么? */
+  /* 如果不继承的话,button有圆角时,这个的边框就会超出button范围 */
+  /* 用css过渡实现点击态的想法确实妙 */
   //&::before {
   //  position: absolute;
   //  top: 50%;
@@ -34,6 +37,8 @@
   //  opacity: 0;
   //  content: ' ';
   //
+  /* 为啥要把边框和背景设置成黑色呢? */
+  /* 就是为了透明过渡嘛,点一下就从 0变成 0.15 即透明变成一点暗灰 */
   //  .theme(background-color, @black);
   //  .theme(border-color, @black);
   //}
@@ -128,7 +133,7 @@
   //  .theme(height, @button-mini-height);
   //  .theme(font-size, @button-mini-font-size);
   //
-  //  // todo 这个+号用的秒啊
+  //  // 这个+号用的秒啊
   //  & + .van-button--mini {
   //    margin-left: 5px;
   //  }
@@ -151,10 +156,14 @@
   //  .theme(opacity, @button-disabled-opacity);
   //}
 
-  &__text {
-    display: inline;
-  }
+  /* 这个没有弄过去 */
+  /* 因为父元素本身就是flex布局 */
+  /* 这个元素直接使用text就行了,用view再加dis:inline是多此一举 */
+  //&__text {
+  //  display: inline;
+  //}
 
+  /* todo 下面这几行在小程序和h5中可能会有兼容问题 */
   &__loading-text,
   &__icon + &__text:not(:empty) {
     margin-left: @padding-base;
@@ -166,6 +175,7 @@
     vertical-align: top;
   }
 
+  /* todo 为什么需要极细边框? */
   &--hairline {
     padding-top: 1px; // add 1px padding for text vertical align middle
     border-width: 0;
