@@ -15,7 +15,7 @@
 	"cloudfunctionRoot": "functions/",
 	"libVersion": "2.8.2",
 	"appid": "wxbae93b9bdb574489",
-	"projectname": "vant-weapp",
+	"projectname": "vant-weapp%E7%A4%BA%E4%BE%8B",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

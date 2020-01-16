@@ -1,18 +1,24 @@
-<wxs src="../wxs/utils.wxs" module="utils" />
+<!--<wxs src="../wxs/utils.wxs" module="utils" />-->
 
-<view class="custom-class van-loading {{ vertical ? 'van-loading--vertical' : '' }}">
-  <view
-    class="van-loading__spinner van-loading__spinner--{{ type }}"
-    style="color: {{ color }}; width: {{ utils.addUnit(size) }}; height: {{ utils.addUnit(size) }}"
-  >
-    <view
-      wx:if="{{ type === 'spinner' }}"
-      wx:for="item in 12"
-      wx:key="index"
-      class="van-loading__dot"
-    />
-  </view>
-  <view class="van-loading__text" style="font-size: {{ utils.addUnit(textSize) }};">
-    <slot />
-  </view>
-</view>
+<!-- custom-class不是prop变量,在小程序里面为什么可以自动替换成外部传入的值呢? -->
+<!-- 这是小程序里面实现的外部样式类,参考:https://developers.weixin.qq
+.com/miniprogram/dev/framework/custom-component/wxml-wxss.htm -->
+<!--<view class="custom-class van-loading {{ vertical ? 'van-loading&#45;&#45;vertical' : '' }}">-->
+<!--  &lt;!&ndash; todo 这里应该把两个icon分开写,这样耦合在一起看起有点绕 &ndash;&gt;-->
+<!--  <view-->
+<!--    class="van-loading__spinner van-loading__spinner&#45;&#45;{{ type }}"-->
+<!--    style="color: {{ color }}; width: {{ utils.addUnit(size) }}; height: {{ utils.addUnit(size) }}"-->
+<!--  >-->
+<!--    &lt;!&ndash; todo 这个循环可以换成css来实现,只需要用1个标签 &ndash;&gt;-->
+<!--    <view-->
+<!--      wx:if="{{ type === 'spinner' }}"-->
+<!--      wx:for="item in 12"-->
+<!--      wx:key="index"-->
+<!--      class="van-loading__dot"-->
+<!--    />-->
+<!--  </view>-->
+<!--  &lt;!&ndash; todo 这里为什么要用插槽,直接用一个props,还可以少渲染一个标签的嘛 &ndash;&gt;-->
+<!--  <view class="van-loading__text" style="font-size: {{ utils.addUnit(textSize) }};">-->
+<!--    <slot />-->
+<!--  </view>-->
+<!--</view>-->

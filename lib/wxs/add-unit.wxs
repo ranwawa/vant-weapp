@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* todo 这个getRegExp全局方法是从哪里注入的呢? */
 var REGEXP = getRegExp('^\d+(\.\d+)?$');
 
 function addUnit(value) {
@@ -6,6 +7,7 @@ function addUnit(value) {
     return undefined;
   }
 
+  /* 其实这种字符串转换方法和Number默认的转应该差异较小,但还是显示的转换好一些,避免未知异常 */
   return REGEXP.test('' + value) ? value + 'px' : value;
 }
 

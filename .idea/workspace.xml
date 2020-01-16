@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vant-weapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/有赞-vant-weapp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/button/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/info/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/info/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/info/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/info/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/info/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pages/loading/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/example/pages/loading/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/wxs/add-unit.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wxs/add-unit.wxs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/icon/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/icon/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/icon/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/loading/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/loading/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/loading/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/loading/index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/uni-vant" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,7 +68,8 @@
       <workItem from="1578904403509" duration="2184000" />
       <workItem from="1578919015205" duration="10000" />
       <workItem from="1578965976997" duration="3000" />
-      <workItem from="1579077333848" duration="3314000" />
+      <workItem from="1579077333848" duration="3365000" />
+      <workItem from="1579139166405" duration="15306000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
@@ -83,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578842935277</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="info干完">
+      <created>1579086694602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579086694602</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,12 +118,29 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
     <MESSAGE value="btn要干完了" />
-    <option name="LAST_COMMIT_MESSAGE" value="btn要干完了" />
+    <MESSAGE value="info干完" />
+    <option name="LAST_COMMIT_MESSAGE" value="info干完" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup" timestamp="1579077388267">
+    <state x="591" y="131" key="CommitChangelistDialog2" timestamp="1579086691698">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579077388267" />
+    <state x="591" y="131" key="CommitChangelistDialog2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579086691698" />
+    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1579139170791">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="771" y="295" key="FileChooserDialogImpl/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579139170791" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1579086696965">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579086696965" />
+    <state x="667" y="273" width="647" height="534" key="find.popup" timestamp="1579141624883">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="667" y="273" width="647" height="534" key="find.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579141624883" />
+    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup" timestamp="1579177861678">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579177861678" />
   </component>
 </project>
