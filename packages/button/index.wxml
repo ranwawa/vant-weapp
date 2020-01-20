@@ -1,18 +1,19 @@
-<wxs
-  src="../wxs/utils.wxs"
-  module="utils"
-  xmlns:wx=""
-/>
+<!--<wxs-->
+<!--  src="../wxs/utils.wxs"-->
+<!--  module="utils"-->
+<!--  xmlns:wx=""-->
+<!--/>-->
 
-<!-- todo hover-class属性里面的hover-class有啥作用呢? -->
+<!-- hover-class属性里面的hover-class有啥作用呢? -->
+<!-- 这个是小程序里面的外部样式类 -->
 <!-- todo disable为什么仅仅是通过样式和事件来控制,而非直接改变button的属性值呢?,这应该是个bug -->
 <!-- todo hairline暂未实现 -->
 <button
-  class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline--surround' : '' }}"
+  <!--class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline&#45;&#45;surround' : '' }}"-->
   <!--id="{{ id }}"-->
   hover-class="van-button--active hover-class"
   <!--lang="{{ lang }}"-->
-  style="{{ style }} {{ customStyle }}"
+  <!--style="{{ style }} {{ customStyle }}"-->
   <!--open-type="{{ openType }}"-->
   business-id="{{ businessId }}"
   <!--session-from="{{ sessionFrom }}"-->
@@ -30,30 +31,30 @@
   <!--bindlaunchapp="bindLaunchApp"-->
   <!--bindopensetting="bindOpenSetting"-->
 >
-  <block wx:if="{{ loading }}">
-    <van-loading
-      type="{{ loadingType }}"
-      custom-class="loading-class"
-      size="{{ loadingSize }}"
-      color="{{ type === 'default' ? '#c9c9c9' : 'white' }}"
-    />
+  <!--<block wx:if="{{ loading }}">-->
+    <!--<van-loading-->
+    <!--  type="{{ loadingType }}"-->
+    <!--  custom-class="loading-class"-->
+    <!--  size="{{ loadingSize }}"-->
+    <!--  color="{{ type === 'default' ? '#c9c9c9' : 'white' }}"-->
+    <!--/>-->
     <!--<view-->
     <!--  class="van-button__loading-text"-->
     <!--  wx:if="{{ loadingText }}"-->
     <!--&gt;-->
     <!--  {{ loadingText }}-->
     <!--</view>-->
-  </block>
-  <block wx:else>
-    <van-icon
-      class="van-button__icon"
-      name="{{ icon }}"
-      wx:if="{{ icon }}"
-      size="1.2em"
-      custom-style="line-height: inherit;"
-    />
+  <!--</block>-->
+  <!--<block wx:else>-->
+    <!--<van-icon-->
+    <!--  class="van-button__icon"-->
+    <!--  name="{{ icon }}"-->
+    <!--  wx:if="{{ icon }}"-->
+    <!--  size="1.2em"-->
+    <!--  custom-style="line-height: inherit;"-->
+    <!--/>-->
     <!--<view class="van-button__text">-->
     <!--  <slot />-->
     <!--</view>-->
-  </block>
-</button>
+  <!--</block>-->
+<!--</button>-->

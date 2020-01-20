@@ -1,18 +1,18 @@
-import { VantComponent } from '../common/component';
-import { button } from '../mixins/button';
+// import { VantComponent } from '../common/component';
+// import { button } from '../mixins/button';
 // import { openType } from '../mixins/open-type';
 
 VantComponent({
-  mixins: [button, openType],
+  // mixins: [button, openType],
 
-  classes: ['hover-class', 'loading-class'],
+  // classes: ['hover-class', 'loading-class'],
 
-  data: {
-    style: ''
-  },
+  // data: {
+  //   style: ''
+  // },
 
   props: {
-    icon: String,
+    // icon: String,
     // plain: Boolean,
     // block: Boolean,
     // round: Boolean,
@@ -22,10 +22,10 @@ VantComponent({
     // disabled: Boolean,
     // loadingText: String,
     // customStyle: String,
-    loadingType: {
-      type: String,
-      value: 'circular'
-    },
+    // loadingType: {
+    //   type: String,
+    //   value: 'circular'
+    // },
     // type: {
     //   type: String,
     //   value: 'default'
@@ -34,10 +34,10 @@ VantComponent({
     //   type: String,
     //   value: 'normal'
     // },
-    loadingSize: {
-      type: String,
-      value: '20px'
-    },
+    // loadingSize: {
+    //   type: String,
+    //   value: '20px'
+    // },
     // color: {
     //   type: String,
     //   observer(color: string) {
