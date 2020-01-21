@@ -9,7 +9,7 @@
 <!-- todo disable为什么仅仅是通过样式和事件来控制,而非直接改变button的属性值呢?,这应该是个bug -->
 <!-- todo hairline暂未实现 -->
 <button
-  <!--class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline&#45;&#45;surround' : '' }}"-->
+  class="custom-class {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline--surround' : '' }}"
   <!--id="{{ id }}"-->
   hover-class="van-button--active hover-class"
   <!--lang="{{ lang }}"-->

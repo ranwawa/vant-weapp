@@ -2,25 +2,25 @@
 
 <view
   class="custom-class {{ utils.bem('cell', [size, { center, required, borderless: !border, clickable: isLink || clickable }]) }}"
-  hover-class="van-cell--hover hover-class"
-  hover-stay-time="70"
-  style="{{ customStyle }}"
-  bind:tap="onClick"
+  <!--hover-class="van-cell&#45;&#45;hover hover-class"-->
+  <!--hover-stay-time="70"-->
+  <!--style="{{ customStyle }}"-->
+  <!--bind:tap="onClick"-->
 >
-  <van-icon
-    wx:if="{{ icon }}"
-    name="{{ icon }}"
-    class="van-cell__left-icon-wrap"
-    custom-class="van-cell__left-icon"
-  />
-  <slot wx:else name="icon" />
+  <!--<van-icon-->
+  <!--  wx:if="{{ icon }}"-->
+  <!--  name="{{ icon }}"-->
+  <!--  class="van-cell__left-icon-wrap"-->
+    <!--custom-class="van-cell__left-icon"-->
+  <!--/>-->
+  <!--<slot wx:else name="icon" />-->
 
   <view
     style="{{ titleWidth ? 'max-width:' + titleWidth + ';min-width:' + titleWidth : '' }}"
     class="van-cell__title title-class"
   >
-    <block wx:if="{{ title }}">{{ title }}</block>
-    <slot wx:else name="title" />
+    <!--<block wx:if="{{ title }}">{{ title }}</block>-->
+    <!--<slot wx:else name="title" />-->
 
     <view wx:if="{{ label || useLabelSlot }}" class="van-cell__label label-class">
       <slot wx:if="{{ useLabelSlot }}" name="label" />

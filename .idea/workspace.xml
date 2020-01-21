@@ -4,9 +4,10 @@
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/button/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/button/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/icon/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/cell/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/cell/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/cell/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
       <workItem from="1579139166405" duration="15354000" />
       <workItem from="1579225933664" duration="5916000" />
       <workItem from="1579488705626" duration="51000" />
+      <workItem from="1579576596575" duration="7356000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
@@ -141,10 +143,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579182826495" />
-    <state x="667" y="273" width="647" height="534" key="find.popup" timestamp="1579141624883">
+    <state x="667" y="273" width="647" height="534" key="find.popup" timestamp="1579587437289">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="667" y="273" width="647" height="534" key="find.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579141624883" />
+    <state x="667" y="273" width="647" height="534" key="find.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579587437289" />
     <state x="763" y="328" width="672" height="678" key="search.everywhere.popup" timestamp="1579177861678">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

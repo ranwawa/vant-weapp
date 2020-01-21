@@ -3,13 +3,13 @@ import { VantComponent } from '../common/component';
 import { Weapp } from 'definitions/weapp';
 
 VantComponent({
-  classes: [
-    'title-class',
-    'label-class',
-    'value-class',
-    'right-icon-class',
-    'hover-class'
-  ],
+  // classes: [
+  //   'title-class',
+  //   'label-class',
+  //   'value-class',
+  //   'right-icon-class',
+  //   'hover-class'
+  // ],
 
   mixins: [link],
 
