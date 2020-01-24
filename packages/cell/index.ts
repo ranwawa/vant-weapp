@@ -1,8 +1,8 @@
-import { link } from '../mixins/link';
-import { VantComponent } from '../common/component';
-import { Weapp } from 'definitions/weapp';
+// import { link } from '../mixins/link';
+// import { VantComponent } from '../common/component';
+// import { Weapp } from 'definitions/weapp';
 
-VantComponent({
+// VantComponent({
   // classes: [
   //   'title-class',
   //   'label-class',
@@ -11,32 +11,32 @@ VantComponent({
   //   'hover-class'
   // ],
 
-  mixins: [link],
+  // mixins: [link],
 
-  props: {
-    title: null,
-    value: null,
-    icon: String,
-    size: String,
-    label: String,
-    center: Boolean,
-    isLink: Boolean,
-    required: Boolean,
-    clickable: Boolean,
-    titleWidth: String,
-    customStyle: String,
-    arrowDirection: String,
-    useLabelSlot: Boolean,
-    border: {
-      type: Boolean,
-      value: true
-    }
-  },
+  // props: {
+    // title: null,
+    // value: null,
+    // icon: String,
+    // size: String,
+    // label: String,
+    // center: Boolean,
+    // isLink: Boolean,
+    // required: Boolean,
+    // clickable: Boolean,
+    // titleWidth: String,
+    // customStyle: String,
+    // arrowDirection: String,
+    // useLabelSlot: Boolean,
+    // border: {
+    //   type: Boolean,
+    //   value: true
+    // }
+  // },
 
-  methods: {
-    onClick(event: Weapp.Event) {
-      this.$emit('click', event.detail);
-      this.jumpLink();
-    }
-  }
-});
+  // methods: {
+  //   onClick(event: Weapp.Event) {
+  //     this.$emit('click', event.detail);
+  //     this.jumpLink();
+  //   }
+//   }
+// });

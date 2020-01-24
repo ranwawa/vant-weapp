@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/button/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/button/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/button/index.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/cell/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/cell/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/cell/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell/index.wxml" afterDir="false" />
@@ -31,8 +29,9 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/uni-vant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,7 +40,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="E:\vant-weapp\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6015.20\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,6 +70,10 @@
       <workItem from="1579225933664" duration="5916000" />
       <workItem from="1579488705626" duration="51000" />
       <workItem from="1579576596575" duration="7356000" />
+      <workItem from="1579778173257" duration="201000" />
+      <workItem from="1579778630261" duration="599000" />
+      <workItem from="1579833969313" duration="122000" />
+      <workItem from="1579834615425" duration="6134000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
