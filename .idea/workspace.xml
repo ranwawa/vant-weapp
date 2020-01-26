@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/cell-group/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell-group/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/cell-group/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell-group/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/cell-group/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/cell-group/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/field/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/field/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/field/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/field/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/field/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/field/index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,8 @@
       <workItem from="1579778630261" duration="599000" />
       <workItem from="1579833969313" duration="122000" />
       <workItem from="1579834615425" duration="6134000" />
-      <workItem from="1579848950338" duration="2072000" />
+      <workItem from="1579848950338" duration="10788000" />
+      <workItem from="1580013239360" duration="4411000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
@@ -111,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579848974826</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cell-group干完">
+      <created>1579857469889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579857469889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,14 +148,15 @@
     <MESSAGE value="info干完" />
     <MESSAGE value="icon干完" />
     <MESSAGE value="cell干完" />
-    <option name="LAST_COMMIT_MESSAGE" value="cell干完" />
+    <MESSAGE value="cell-group干完" />
+    <option name="LAST_COMMIT_MESSAGE" value="cell-group干完" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2467" y="0" key="CommitChangelistDialog2" timestamp="1579848973222">
+    <state x="2467" y="0" key="CommitChangelistDialog2" timestamp="1579857468294">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="591" y="131" key="CommitChangelistDialog2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579182819679" />
-    <state x="2467" y="0" key="CommitChangelistDialog2/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579848973222" />
+    <state x="2467" y="0" key="CommitChangelistDialog2/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579857468294" />
     <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1579510067247">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -157,10 +166,11 @@
     </state>
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579182826495" />
     <state x="2458" y="273" key="Vcs.Push.Dialog.v2/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579848977884" />
-    <state x="667" y="273" width="647" height="534" key="find.popup" timestamp="1579587437289">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="2545" y="39" width="778" height="1041" key="find.popup" timestamp="1579862188195">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="273" width="647" height="534" key="find.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579587437289" />
+    <state x="2545" y="39" width="778" height="1041" key="find.popup/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579862188195" />
     <state x="763" y="328" width="672" height="678" key="search.everywhere.popup" timestamp="1579177861678">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

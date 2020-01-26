@@ -1,127 +1,127 @@
 import { VantComponent } from '../common/component';
 import { Weapp } from 'definitions/weapp';
-import { getSystemInfoSync } from '../common/utils';
+// import { getSystemInfoSync } from '../common/utils';
 
 VantComponent({
-  field: true,
+  // field: true,
 
-  classes: ['input-class', 'right-icon-class'],
+  // classes: ['input-class', 'right-icon-class'],
 
-  props: {
-    size: String,
-    icon: String,
-    label: String,
-    error: Boolean,
-    fixed: Boolean,
-    focus: Boolean,
-    center: Boolean,
-    isLink: Boolean,
-    leftIcon: String,
-    rightIcon: String,
-    disabled: Boolean,
-    autosize: Boolean,
-    readonly: Boolean,
-    required: Boolean,
-    password: Boolean,
-    iconClass: String,
-    clearable: Boolean,
-    clickable: Boolean,
-    inputAlign: String,
-    placeholder: String,
-    customStyle: String,
-    confirmType: String,
-    confirmHold: Boolean,
-    holdKeyboard: Boolean,
-    errorMessage: String,
-    arrowDirection: String,
-    placeholderStyle: String,
-    errorMessageAlign: String,
-    selectionEnd: {
-      type: Number,
-      value: -1
-    },
-    selectionStart: {
-      type: Number,
-      value: -1
-    },
-    showConfirmBar: {
-      type: Boolean,
-      value: true
-    },
-    adjustPosition: {
-      type: Boolean,
-      value: true
-    },
-    cursorSpacing: {
-      type: Number,
-      value: 50
-    },
-    maxlength: {
-      type: Number,
-      value: -1
-    },
-    type: {
-      type: String,
-      value: 'text'
-    },
-    border: {
-      type: Boolean,
-      value: true
-    },
-    titleWidth: {
-      type: String,
-      value: '90px'
-    }
-  },
+  // props: {
+    // size: String,
+    // icon: String,
+    // label: String,
+    // error: Boolean,
+    // fixed: Boolean,
+    // focus: Boolean,
+    // center: Boolean,
+    // isLink: Boolean,
+    // leftIcon: String,
+    // rightIcon: String,
+    // disabled: Boolean,
+    // autosize: Boolean,
+    // readonly: Boolean,
+    // required: Boolean,
+    // password: Boolean,
+    // iconClass: String,
+    // clearable: Boolean,
+    // clickable: Boolean,
+    // inputAlign: String,
+    // placeholder: String,
+    // customStyle: String,
+    // confirmType: String,
+    // confirmHold: Boolean,
+    // holdKeyboard: Boolean,
+    // errorMessage: String,
+    // arrowDirection: String,
+    // placeholderStyle: String,
+    // errorMessageAlign: String,
+    // selectionEnd: {
+    //   type: Number,
+    //   value: -1
+    // },
+    // selectionStart: {
+    //   type: Number,
+    //   value: -1
+    // },
+    // showConfirmBar: {
+    //   type: Boolean,
+    //   value: true
+    // },
+    // adjustPosition: {
+    //   type: Boolean,
+    //   value: true
+    // },
+    // cursorSpacing: {
+    //   type: Number,
+    //   value: 50
+    // },
+    // maxlength: {
+    //   type: Number,
+    //   value: -1
+    // },
+    // type: {
+    //   type: String,
+    //   value: 'text'
+    // },
+    // border: {
+    //   type: Boolean,
+    //   value: true
+    // },
+    // titleWidth: {
+    //   type: String,
+    //   value: '90px'
+    // }
+  // },
 
-  data: {
-    focused: false,
-    system: getSystemInfoSync().system.split(' ').shift().toLowerCase()
-  },
+  // data: {
+    // focused: false,
+    // system: getSystemInfoSync().system.split(' ').shift().toLowerCase()
+  // },
 
-  methods: {
-    onInput(event: Weapp.Event) {
-      const { value = '' } = event.detail || {};
+  // methods: {
+    // onInput(event: Weapp.Event) {
+    //   const { value = '' } = event.detail || {};
 
       this.setData({ value });
 
-      wx.nextTick(() => {
-        this.emitChange(value);
-      });
-    },
+    //   wx.nextTick(() => {
+    //     this.emitChange(value);
+    //   });
+    // },
 
-    onFocus(event: Weapp.Event) {
-      this.setData({ focused: true });
-      this.$emit('focus', event.detail);
-    },
+    // onFocus(event: Weapp.Event) {
+    //   this.setData({ focused: true });
+      // this.$emit('focus', event.detail);
+    // },
 
-    onBlur(event: Weapp.Event) {
-      this.setData({ focused: false });
-      this.$emit('blur', event.detail);
-    },
+    // onBlur(event: Weapp.Event) {
+    //   this.setData({ focused: false });
+    //   this.$emit('blur', event.detail);
+    // },
 
-    onClickIcon() {
-      this.$emit('click-icon');
-    },
+    // onClickIcon() {
+    //   this.$emit('click-icon');
+    // },
+    //
+    // onClear() {
+    //   this.setData({ value: '' });
+    //
+    //   wx.nextTick(() => {
+    //     this.emitChange('');
+    //     this.$emit('clear', '');
+    //   });
+    // },
 
-    onClear() {
-      this.setData({ value: '' });
+    // onConfirm() {
+    //   this.$emit('confirm', this.data.value);
+    // },
 
-      wx.nextTick(() => {
-        this.emitChange('');
-        this.$emit('clear', '');
-      });
-    },
+    // emitChange(value) {
+    //   this.$emit('input', value);
+    //   this.$emit('change', value);
+    // },
 
-    onConfirm() {
-      this.$emit('confirm', this.data.value);
-    },
-
-    emitChange(value) {
-      this.$emit('input', value);
-      this.$emit('change', value);
-    },
-
-    noop() {}
-  }
-});
+//     noop() {}
+//   }
+// });
