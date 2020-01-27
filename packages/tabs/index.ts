@@ -1,12 +1,12 @@
 import { VantComponent } from '../common/component';
-import { touch } from '../mixins/touch';
+// import { touch } from '../mixins/touch';
 import { Weapp } from 'definitions/weapp';
 import { isDef, addUnit } from '../common/utils';
 
 type TrivialInstance = WechatMiniprogram.Component.TrivialInstance;
 
 VantComponent({
-  mixins: [touch],
+  // mixins: [touch],
 
   classes: ['nav-class', 'tab-class', 'tab-active-class', 'line-class'],
 
@@ -30,11 +30,11 @@ VantComponent({
   },
 
   props: {
-    color: {
-      type: String,
+    // color: {
+    //   type: String,
       observer: 'setLine'
-    },
-    sticky: Boolean,
+    // },
+    // sticky: Boolean,
     animated: {
       type: Boolean,
       observer() {
@@ -42,48 +42,49 @@ VantComponent({
         this.children.forEach((child: TrivialInstance) => child.updateRender());
       }
     },
-    swipeable: Boolean,
-    lineWidth: {
-      type: [String, Number],
-      value: -1,
+    // swipeable: Boolean,
+    // lineWidth: {
+    //   type: [String, Number],
+    //   value: -1,
       observer: 'setLine'
-    },
-    lineHeight: {
-      type: [String, Number],
-      value: -1,
+    // },
+    // lineHeight: {
+    //   type: [String, Number],
+    //   value: -1,
       observer: 'setLine'
-    },
-    titleActiveColor: String,
-    titleInactiveColor: String,
-    active: {
-      type: [String, Number],
-      value: 0,
+    // },
+    // todo 下面这两个在文档上未出现
+    // titleActiveColor: String,
+    // titleInactiveColor: String,
+    // active: {
+    //   type: [String, Number],
+    //   value: 0,
       observer(name) {
         if (name !== this.getCurrentName()) {
           this.setCurrentIndexByName(name);
         }
       }
-    },
-    type: {
-      type: String,
-      value: 'line'
-    },
-    border: {
-      type: Boolean,
-      value: true
-    },
-    ellipsis: {
-      type: Boolean,
-      value: true
-    },
-    duration: {
-      type: Number,
-      value: 0.3
-    },
-    zIndex: {
-      type: Number,
-      value: 1
-    },
+    // },
+    // type: {
+    //   type: String,
+    //   value: 'line'
+    // },
+    // border: {
+    //   type: Boolean,
+    //   value: true
+    // },
+    // ellipsis: {
+    //   type: Boolean,
+    //   value: true
+    // },
+    // duration: {
+    //   type: Number,
+    //   value: 0.3
+    // },
+    // zIndex: {
+    //   type: Number,
+    //   value: 1
+    // },
     swipeThreshold: {
       type: Number,
       value: 4,
@@ -105,17 +106,18 @@ VantComponent({
 
   data: {
     tabs: [],
-    lineStyle: '',
+    // lineStyle: '',
     scrollLeft: 0,
     scrollable: false,
     trackStyle: '',
-    currentIndex: null,
-    container: null
+    // currentIndex: null,
+    // container: null
   },
 
-  beforeCreate() {
-    this.children = [];
-  },
+  // beforeCreate() {
+    // todo 为啥要放在这儿,而非data里面?
+    // this.children = [];
+  // },
 
   mounted() {
     this.setData({
@@ -225,17 +227,17 @@ VantComponent({
     },
 
     setLine(skipTransition?: boolean) {
-      if (this.data.type !== 'line') {
-        return;
-      }
+      // if (this.data.type !== 'line') {
+      //   return;
+      // }
 
-      const {
-        color,
-        duration,
-        currentIndex,
-        lineWidth,
-        lineHeight
-      } = this.data;
+      // const {
+      //   color,
+      //   duration,
+      //   currentIndex,
+      //   lineWidth,
+      //   lineHeight
+      // } = this.data;
 
       this.getRect('.van-tab', true).then(
         (rects: WechatMiniprogram.BoundingClientRectCallbackResult[] = []) => {
@@ -273,21 +275,21 @@ VantComponent({
       );
     },
 
-    setTrack() {
-      const { animated, duration, currentIndex } = this.data;
-
-      if (!animated) {
-        return;
-      }
-
-      this.setData({
-        trackStyle: `
-          transform: translate3d(${-100 * currentIndex}%, 0, 0);
-          -webkit-transition-duration: ${duration}s;
-          transition-duration: ${duration}s;
-        `
-      });
-    },
+    // setTrack() {
+    //   const { animated, duration, currentIndex } = this.data;
+    //
+    //   if (!animated) {
+    //     return;
+    //   }
+    //
+    //   this.setData({
+    //     trackStyle: `
+    //       transform: translate3d(${-100 * currentIndex}%, 0, 0);
+    //       -webkit-transition-duration: ${duration}s;
+    //       transition-duration: ${duration}s;
+    //     `
+    //   });
+    // },
 
     // scroll active tab into view
     scrollIntoView() {
@@ -321,33 +323,33 @@ VantComponent({
       this.$emit('scroll', event.detail);
     },
 
-    onTouchStart(event: Weapp.TouchEvent) {
-      if (!this.data.swipeable) return;
+    // onTouchStart(event: Weapp.TouchEvent) {
+    //   if (!this.data.swipeable) return;
+    //
+    //   this.touchStart(event);
+    // },
 
-      this.touchStart(event);
-    },
-
-    onTouchMove(event: Weapp.TouchEvent) {
-      if (!this.data.swipeable) return;
-
-      this.touchMove(event);
-    },
+    // onTouchMove(event: Weapp.TouchEvent) {
+    //   if (!this.data.swipeable) return;
+    //
+    //   this.touchMove(event);
+    // },
 
     // watch swipe touch end
-    onTouchEnd() {
-      if (!this.data.swipeable) return;
+    // onTouchEnd() {
+      // if (!this.data.swipeable) return;
 
-      const { tabs, currentIndex } = this.data;
-      const { direction, deltaX, offsetX } = this;
-      const minSwipeDistance = 50;
-
-      if (direction === 'horizontal' && offsetX >= minSwipeDistance) {
-        if (deltaX > 0 && currentIndex !== 0) {
-          this.setCurrentIndex(currentIndex - 1);
-        } else if (deltaX < 0 && currentIndex !== tabs.length - 1) {
-          this.setCurrentIndex(currentIndex + 1);
-        }
-      }
-    }
+    //   // const { tabs, currentIndex } = this.data;
+    //   // const { direction, deltaX, offsetX } = this;
+    //   // const minSwipeDistance = 50;
+    //   //
+    //   // if (direction === 'horizontal' && offsetX >= minSwipeDistance) {
+    //   //   if (deltaX > 0 && currentIndex !== 0) {
+    //   //     this.setCurrentIndex(currentIndex - 1);
+    //   //   } else if (deltaX < 0 && currentIndex !== tabs.length - 1) {
+    //   //     this.setCurrentIndex(currentIndex + 1);
+    //   //   }
+    //   // }
+    // }
   }
 });

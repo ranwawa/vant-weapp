@@ -6,6 +6,8 @@ export const basic = Behavior({
 
     getRect(selector: string, all: boolean) {
       return new Promise(resolve => {
+        // todo 加in时能否找到page和自身component以及其他components里面的内容
+        // 去掉in之后呢?
         wx.createSelectorQuery()
           .in(this)[all ? 'selectAll' : 'select'](selector)
           .boundingClientRect(rect => {

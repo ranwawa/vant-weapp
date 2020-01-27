@@ -1,175 +1,178 @@
 import { VantComponent } from '../common/component';
 
-const ROOT_ELEMENT = '.van-sticky';
+// const ROOT_ELEMENT = '.van-sticky';
 
 VantComponent({
   props: {
-    zIndex: {
-      type: Number,
-      value: 99
-    },
-    offsetTop: {
-      type: Number,
-      value: 0,
-      observer: 'observeContent'
-    },
-    disabled: {
-      type: Boolean,
-      observer(value) {
-        if (!this.mounted) {
-          return;
-        }
-        value ? this.disconnectObserver() : this.initObserver();
-      }
-    },
-    container: {
-      type: null,
-      observer(target: () => WechatMiniprogram.NodesRef) {
-        if (typeof target !== 'function' || !this.data.height) {
-          return;
-        }
-
-        this.observeContainer();
-      }
-    }
+    // zIndex: {
+    //   type: Number,
+    //   value: 99
+    // },
+    // offsetTop: {
+    //   type: Number,
+    //   value: 0,
+    //   observer: 'observeContent'
+    // },
+    // todo 文档上未出现这个变量,所以相关的全部忽略掉
+    // disabled: {
+    //   type: Boolean,
+    //   observer(value) {
+    //     if (!this.mounted) {
+    //       return;
+    //     }
+    //     value ? this.disconnectObserver() : this.initObserver();
+    //   }
+    // },
+    // container: {
+    //   type: null,
+    //   observer(target: () => WechatMiniprogram.NodesRef) {
+    //     if (typeof target !== 'function' || !this.data.height) {
+    //       return;
+    //     }
+    //
+    //     this.observeContainer();
+    //   }
+    // }
   },
 
-  data: {
-    wrapStyle: '',
-    containerStyle: ''
-  },
+  // data: {
+  //   wrapStyle: '',
+  //   containerStyle: ''
+  // },
 
   methods: {
-    setStyle() {
-      const { offsetTop, height, fixed, zIndex } = this.data;
+    // setStyle() {
+    //   const { offsetTop, height, fixed, zIndex } = this.data;
+    //
+    //   if (fixed) {
+    //     this.setData({
+    //       wrapStyle: `top: ${offsetTop}px;`,
+    //       containerStyle: `height: ${height}px; z-index: ${zIndex};`
+    //     });
+    //   } else {
+    //     this.setData({
+    //       wrapStyle: '',
+    //       containerStyle: ''
+    //     });
+    //   }
+    // },
 
-      if (fixed) {
-        this.setData({
-          wrapStyle: `top: ${offsetTop}px;`,
-          containerStyle: `height: ${height}px; z-index: ${zIndex};`
-        });
-      } else {
-        this.setData({
-          wrapStyle: '',
-          containerStyle: ''
-        });
-      }
-    },
+    // getContainerRect() {
+    //   const nodesRef: WechatMiniprogram.NodesRef = this.data.container();
+    //
+    //   return new Promise(resolve =>
+    //     nodesRef.boundingClientRect(resolve).exec()
+    //   );
+    // },
 
-    getContainerRect() {
-      const nodesRef: WechatMiniprogram.NodesRef = this.data.container();
+    // initObserver() {
+    //   this.disconnectObserver();
+    //
+    //   this.getRect(ROOT_ELEMENT).then(
+    //     (rect: WechatMiniprogram.BoundingClientRectCallbackResult) => {
+    //       this.setData({ height: rect.height });
+    //
+    //       wx.nextTick(() => {
+    //         this.observeContent();
+    //         this.observeContainer();
+    //       });
+    //     }
+    //   );
+    // },
 
-      return new Promise(resolve =>
-        nodesRef.boundingClientRect(resolve).exec()
-      );
-    },
+    // disconnectObserver(observerName?: string) {
+    //   if (observerName) {
+    //     const observer: WechatMiniprogram.IntersectionObserver = this[
+    //       observerName
+    //       ];
+    //     observer && observer.disconnect();
+    //   } else {
+    //     this.contentObserver && this.contentObserver.disconnect();
+    //     this.containerObserver && this.containerObserver.disconnect();
+    //   }
+    // },
 
-    initObserver() {
-      this.disconnectObserver();
+    // observeContent() {
+    //   const { offsetTop } = this.data;
+    //
+    //   this.disconnectObserver('contentObserver');
+    //   const contentObserver = this.createIntersectionObserver({
+    //     // todo 这个阈值为啥要设置成0,1其原理是啥
+    //     thresholds: [0, 1]
+    //   });
+    //   this.contentObserver = contentObserver;
+    //   contentObserver.relativeToViewport({ top: -offsetTop });
+    //   contentObserver.observe(ROOT_ELEMENT, res => {
+    //     // if (this.data.disabled) {
+    //     //   return;
+    //     // }
+    //
+    //     this.setFixed(res.boundingClientRect.top);
+    //   });
+    // },
 
-      this.getRect(ROOT_ELEMENT).then(
-        (rect: WechatMiniprogram.BoundingClientRectCallbackResult) => {
-          this.setData({ height: rect.height });
+    // observeContainer() {
+    //   if (typeof this.data.container !== 'function') {
+    //     return;
+    //   }
+    //
+    //   const { height } = this.data;
+    //
+    //   this.getContainerRect().then(
+    //     (rect: WechatMiniprogram.BoundingClientRectCallbackResult) => {
+    //       this.containerHeight = rect.height;
+    //
+    //       this.disconnectObserver('containerObserver');
+    //       const containerObserver = this.createIntersectionObserver({
+    //         thresholds: [0, 1]
+    //       });
+    //       this.containerObserver = containerObserver;
+    //       containerObserver.relativeToViewport({
+    //         top: this.containerHeight - height
+    //       });
+    //       containerObserver.observe(ROOT_ELEMENT, res => {
+    //         // if (this.data.disabled) {
+    //         //   return;
+    //         // }
+    //
+    //         this.setFixed(res.boundingClientRect.top);
+    // todo 这里未重新执行setStyle,但是我那边用的watch是会自动执行的
+    //       });
+    //     }
+    //   );
+    // },
 
-          wx.nextTick(() => {
-            this.observeContent();
-            this.observeContainer();
-          });
-        }
-      );
-    },
-
-    disconnectObserver(observerName?: string) {
-      if (observerName) {
-        const observer: WechatMiniprogram.IntersectionObserver = this[
-          observerName
-        ];
-        observer && observer.disconnect();
-      } else {
-        this.contentObserver && this.contentObserver.disconnect();
-        this.containerObserver && this.containerObserver.disconnect();
-      }
-    },
-
-    observeContent() {
-      const { offsetTop } = this.data;
-
-      this.disconnectObserver('contentObserver');
-      const contentObserver = this.createIntersectionObserver({
-        thresholds: [0, 1]
-      });
-      this.contentObserver = contentObserver;
-      contentObserver.relativeToViewport({ top: -offsetTop });
-      contentObserver.observe(ROOT_ELEMENT, res => {
-        if (this.data.disabled) {
-          return;
-        }
-
-        this.setFixed(res.boundingClientRect.top);
-      });
-    },
-
-    observeContainer() {
-      if (typeof this.data.container !== 'function') {
-        return;
-      }
-
-      const { height } = this.data;
-
-      this.getContainerRect().then(
-        (rect: WechatMiniprogram.BoundingClientRectCallbackResult) => {
-          this.containerHeight = rect.height;
-
-          this.disconnectObserver('containerObserver');
-          const containerObserver = this.createIntersectionObserver({
-            thresholds: [0, 1]
-          });
-          this.containerObserver = containerObserver;
-          containerObserver.relativeToViewport({
-            top: this.containerHeight - height
-          });
-          containerObserver.observe(ROOT_ELEMENT, res => {
-            if (this.data.disabled) {
-              return;
-            }
-
-            this.setFixed(res.boundingClientRect.top);
-          });
-        }
-      );
-    },
-
-    setFixed(top) {
-      const { offsetTop, height } = this.data;
-      const { containerHeight } = this;
-
-      const fixed =
-        containerHeight && height
-          ? top > height - containerHeight && top < offsetTop
-          : top < offsetTop;
-
-      this.$emit('scroll', {
-        scrollTop: top,
-        isFixed: fixed
-      });
-
-      this.setData({ fixed });
-
-      wx.nextTick(() => {
-        this.setStyle();
-      });
-    }
-  },
+  //   setFixed(top) {
+  //     const { offsetTop, height } = this.data;
+  //     const { containerHeight } = this;
+  //
+  //     const fixed =
+  //       containerHeight && height
+  //         ? top > height - containerHeight && top < offsetTop
+  //         : top < offsetTop;
+  //
+  //     this.$emit('scroll', {
+  //       scrollTop: top,
+  //       isFixed: fixed
+  //     });
+  //
+  //     this.setData({ fixed });
+  //
+  //     wx.nextTick(() => {
+  //       this.setStyle();
+  //     });
+  //   }
+  // },
 
   mounted() {
-    this.mounted = true;
+    // this.mounted = true;
 
-    if (!this.data.disabled) {
-      this.initObserver();
-    }
+    // if (!this.data.disabled) {
+    // this.initObserver();
+    // }
   },
 
-  destroyed() {
-    this.disconnectObserver();
-  }
+  // destroyed() {
+  //   this.disconnectObserver();
+  // }
 });

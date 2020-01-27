@@ -1,7 +1,7 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
 <wxs src="./index.wxs" module="getters" />
 
-<view class="custom-class {{ utils.bem('tabs', [type]) }}">
+<!--<view class="custom-class {{ utils.bem('tabs', [type]) }}">-->
   <van-sticky
     disabled="{{ !sticky }}"
     z-index="{{ zIndex }}"
@@ -46,15 +46,15 @@
     </view>
   </van-sticky>
 
-  <view
-    class="van-tabs__content"
-    bind:touchstart="onTouchStart"
-    bind:touchmove="onTouchMove"
-    bind:touchend="onTouchEnd"
-    bind:touchcancel="onTouchEnd"
-  >
-    <view class="{{ utils.bem('tabs__track', [{ animated }]) }} van-tabs__track" style="{{ trackStyle }}">
-      <slot />
-    </view>
-  </view>
-</view>
+  <!--<view-->
+  <!--  class="van-tabs__content"-->
+  <!--  bind:touchstart="onTouchStart"-->
+  <!--  bind:touchmove="onTouchMove"-->
+  <!--  bind:touchend="onTouchEnd"-->
+  <!--  bind:touchcancel="onTouchEnd"-->
+  <!--&gt;-->
+  <!--  <view class="{{ utils.bem('tabs__track', [{ animated }]) }} van-tabs__track" style="{{ trackStyle }}">-->
+  <!--    <slot />-->
+  <!--  </view>-->
+  <!--</view>-->
+<!--</view>-->
