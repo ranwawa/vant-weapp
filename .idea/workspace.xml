@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/mixins/basic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mixins/basic.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/sticky/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sticky/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/sticky/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sticky/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/tabs/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tabs/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/tabs/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tabs/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/uploader/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/uploader/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/uploader/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6015.20\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="E:\vant-weapp\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,6 +77,7 @@
       <workItem from="1579848950338" duration="10788000" />
       <workItem from="1580013239360" duration="5159000" />
       <workItem from="1580110346247" duration="17227000" />
+      <workItem from="1581559507054" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
