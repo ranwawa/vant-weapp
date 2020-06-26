@@ -3,18 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aebaf535-72a6-41e3-b7ff-31636bea4b19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/uploader/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/uploader/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/uploader/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/uploader/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/skeleton/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/skeleton/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/skeleton/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/packages/skeleton/index.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="vant-weapp" />
-    <favorites_list name="dispatch" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,11 +19,11 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,7 +38,8 @@
     <property name="ts.external.directory.path" value="E:\vant-weapp\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,6 +74,14 @@
       <workItem from="1580013239360" duration="5159000" />
       <workItem from="1580110346247" duration="17227000" />
       <workItem from="1581559507054" duration="1077000" />
+      <workItem from="1592135198454" duration="529000" />
+      <workItem from="1592135746555" duration="367000" />
+      <workItem from="1592191743175" duration="881000" />
+      <workItem from="1592200073847" duration="1062000" />
+      <workItem from="1592202743166" duration="3000" />
+      <workItem from="1592989183951" duration="646000" />
+      <workItem from="1592990386326" duration="113000" />
+      <workItem from="1593176603384" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="third commit">
       <created>1578498853190</created>
@@ -132,20 +136,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -162,28 +165,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="field finished" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2467" y="0" key="CommitChangelistDialog2" timestamp="1580029490245">
+    <state x="2653" y="295" key="FileChooserDialogImpl" timestamp="1592990429560">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="591" y="131" key="CommitChangelistDialog2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579182819679" />
-    <state x="2467" y="0" key="CommitChangelistDialog2/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1580029490245" />
-    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1579510067247">
+    <state x="2653" y="295" key="FileChooserDialogImpl/62.0.1858.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592990429560" />
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1592200081478" />
+    <state x="819" y="271" width="594" height="568" key="find.popup" timestamp="1592200005281">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="771" y="295" key="FileChooserDialogImpl/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579510067247" />
-    <state x="2458" y="273" key="Vcs.Push.Dialog.v2" timestamp="1580029495807">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579182826495" />
-    <state x="2458" y="273" key="Vcs.Push.Dialog.v2/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1580029495807" />
-    <state x="2545" y="39" width="778" height="1041" key="find.popup" timestamp="1579862188195">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="667" y="273" width="647" height="534" key="find.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579587437289" />
-    <state x="2545" y="39" width="778" height="1041" key="find.popup/65.0.1855.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579862188195" />
-    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup" timestamp="1579177861678">
+    <state x="819" y="271" width="594" height="568" key="find.popup/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1592200005281" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1593176619479">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="763" y="328" width="672" height="678" key="search.everywhere.popup/1982.64.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1579177861678" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1593176619479" />
   </component>
 </project>
